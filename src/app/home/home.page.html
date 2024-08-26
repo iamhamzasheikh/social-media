@@ -30,7 +30,6 @@
 
   <!-- Story-swiper-section -->
   <ion-list class="swiper-main-container" style="background-color: transparent;">
-
     <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
         '275': {
           'slidesPerView': 2,
@@ -65,17 +64,23 @@
           'spaceBetween': 15
         }
       }">
-    <swiper-slide *ngFor="let slide of slides; let i = index" class="slide-div">
-      <div class="image-container" [style.backgroundImage]="slide.image ? 'url(' + slide.image + ')' : 'none'">
-        <ion-list class="icon-box">
-          <ion-icon [name]="slide.icon"></ion-icon>
-        </ion-list>
-      </div>
-  </swiper-slide>
+      <swiper-slide *ngFor="let slide of slides; let i = index" class="slide-div">
+        <div class="image-container" [style.backgroundImage]="slide.image ? 'url(' + slide.image + ')' : 'none'">
+          <ion-list class="icon-box">
+            <ion-icon [name]="slide.icon"></ion-icon>
+          </ion-list>
+        </div>
+      </swiper-slide>
     </swiper-container>
+  </ion-list>
 
+  <!-- Post-feed-section -->
+  <ion-list class="post-feed-section"> 
+    <ion-list class="post-inner-div">
+      <div class="para-text"><p>Recently post</p></div>
+      <div class="para-text"><ion-icon name="ellipsis-horizontal-outline"></ion-icon></div>
 
-
+    </ion-list>
 
   </ion-list>
 

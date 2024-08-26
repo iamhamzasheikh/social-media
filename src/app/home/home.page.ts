@@ -13,16 +13,16 @@ export class HomePage {
   private readonly imagePaths: string[] = [
     'assets/images/tom-cruise.jpg',
     'assets/images/tom.jpg',
-    'assets/images/',
-    'assets/images/image4.jpg',
-    'assets/images/image5.jpg',
-    'assets/images/image6.jpg',
-    'assets/images/image7.jpg',
-    'assets/images/image8.jpg',
-    'assets/images/image9.jpg',
-    'assets/images/image10.jpg',
-    'assets/images/image11.jpg',
-    'assets/images/image12.jpg'
+    'assets/images/1672300616194.jpg',
+    'assets/images/player-holding-img.jpg',
+    'assets/images/1673873077921.jpg',
+    'assets/images/1673870935203.jpg',
+    'assets/images/football-img_1.jpg',
+    'assets/images/IMG_20221227_153113.jpg',
+    'assets/images/IMG_20220205_000705.jpg',
+    'assets/images/1673871421334.jpg',
+    'assets/images/player-holding-img.jpg',
+    'assets/images/IMG_20220205_000705.jpg'
   ];
 
   private readonly icons: string[] = [
