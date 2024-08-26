@@ -1,0 +1,84 @@
+ion-content {
+  --background: linear-gradient(to bottom, #b2f5ea, #ffffff);
+}
+  //  Navbar-CSS
+.header-navbar {
+  background-color: #b2f5ea;
+  border: 2px solid red;
+  width: 100%;
+  div {
+    margin: 0 auto;
+    border: 2px solid black;
+    width: 98%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    ion-buttons {
+      margin-left: 5px;
+      gap: 10px;
+      ion-button {
+        border: 2px solid #fff;
+        background-color: #fff;
+        border-radius: 50%;
+        font-size: 24px;
+        ion-badge {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+// discovery-following-box
+.Discovery-following-div {
+  background-color: transparent;
+  border: 2px solid yellow;
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  .discovery-control-box {
+    background-color: #b2f5ea;
+    margin-left: 15px;
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    .text {
+      
+      width: auto;
+      height: 30px;
+      padding: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      p {
+        text-align: center;
+      }
+      
+    }
+  }
+
+}
+
+@media (min-width: 100px) and (max-width: 400px) {
+  .Discovery-following-div {
+    .discovery-control-box {
+      width: 100%;
+      .text {
+        padding: 0 5px;
+        p {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+// story-swiper-section-css
+
+.swiper-main-container {
+  border: 3px solid black;
+  width: 100%;
+  height: 150px;
+}
