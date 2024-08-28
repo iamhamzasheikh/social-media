@@ -11,7 +11,7 @@
           <ion-icon slot="icon-only" name="chatbubble-ellipses-outline"></ion-icon>
         </ion-button>
       </ion-buttons>
-      <ion-avatar slot="end">
+      <ion-avatar slot="end" style="margin-top: 5px;">
         <img src="/assets/images/tom.jpg" />
       </ion-avatar>
     </div>
@@ -32,7 +32,7 @@
   <ion-list class="swiper-main-container" style="background-color: transparent;">
     <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
         '275': {
-          'slidesPerView': 2,
+          'slidesPerView': 3,
           'spaceBetween': 10
         },
         '360': {
@@ -40,15 +40,15 @@
           'spaceBetween': 10
         },
         '480': {
-          'slidesPerView': 4,
-          'spaceBetween': 10
-        },
-        '600': {
           'slidesPerView': 5,
           'spaceBetween': 10
         },
-        '760': {
+        '600': {
           'slidesPerView': 6,
+          'spaceBetween': 10
+        },
+        '760': {
+          'slidesPerView': 7,
           'spaceBetween': 10
         },
         '900': {
@@ -93,7 +93,7 @@
             <div class="feed-header-div">
               <div class="post">
                 <div class="user-info">
-                  <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                  <img src="/assets/images/avatar2.jpg" alt="User Avatar" class="avatar">
                   <div class="user-details">
                     <h2 class="username">Username</h2>
                     <p class="timestamp">Posted 3h ago</p>
@@ -109,26 +109,15 @@
                 <img src="assets/images/player-holding-img.jpg" class="image img1" alt="Image 1">
               </div>
             </ion-list>
-
-
-
-
           </div>
-
-
-
-
-
         </ion-col>
-
-
         <!-- column-2 -->
         <ion-col size="12" sizeMd="12" sizeLg="6" sizeXl="6">
           <div class="col-1-container">
             <div class="feed-header-div">
               <div class="post">
                 <div class="user-info">
-                  <img src="https://via.placeholder.com/40" alt="User Avatar" class="avatar">
+                  <img src="/assets/images/img_avatar1.jpg" alt="User Avatar" class="avatar">
                   <div class="user-details">
                     <h2 class="username">Username</h2>
                     <p class="timestamp">Posted 3h ago</p>
@@ -140,28 +129,43 @@
             <!-- img--container -->
             <ion-list class="feed-img-section">
               <div class="image-container">
-                <img src="assets/images/tom.jpg" class="image img1" alt="Image 1">
+                <img src="/assets/images/tom.jpg" class="image img1" alt="Image 1">
               </div>
             </ion-list>
-
           </div>
-
-
         </ion-col>
-
-
       </ion-row>
     </ion-grid>
   </ion-list>
-
-
-
-
-
-
-
-
-
-
-
 </ion-content>
+
+<!-- footer-section -->
+
+<ion-footer>
+  <ion-list class="footer-control-div">
+    <ion-list class="footer-main-container">
+
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button tab="home">
+          <ion-icon name="home-outline"></ion-icon>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="search">
+          <ion-icon name="search-outline"></ion-icon>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="camera">
+          <ion-icon name="camera-outline"></ion-icon>
+        </ion-tab-button>
+  
+        <ion-tab-button tab="add-friend">
+          <ion-icon name="person-add-outline"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-list>
+  
+    <ion-list class="round-btn-container">
+      <ion-icon name="add"></ion-icon>
+    </ion-list>
+  </ion-list>
+</ion-footer>
