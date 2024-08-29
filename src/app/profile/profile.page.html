@@ -27,9 +27,154 @@
       <div><h2>Hamza Sheikh</h2></div>
       <div><p>hamza_sheikh</p></div>
     </div>
-
   </ion-list>
 
+  <!-- followers-detail-section -->
+
+  <ion-list class="follow-detail-section">
+    <div class="stats-container">
+      <div class="stat-item">
+        <h2>360</h2>
+        <p>Post</p>
+      </div>
+      <div class="stat-item">
+        <h2>160k</h2>
+        <p>Follower</p>
+      </div>
+      <div class="stat-item">
+        <h2>140k</h2>
+        <p>Following</p>
+      </div>
+    </div>
+  </ion-list>
+
+  <!-- slider-section-for-page-2 -->
+
+  <ion-list class="slider-main-box">
+    <swiper-container class="ion-margin-top ion-margin" pagination="true" [breakpoints]="{
+      '275': {
+        'slidesPerView': 3,
+        'spaceBetween': 10
+      },
+      '360': {
+        'slidesPerView': 3,
+        'spaceBetween': 10
+      },
+      '480': {
+        'slidesPerView': 5,
+        'spaceBetween': 10
+      },
+      '600': {
+        'slidesPerView': 6,
+        'spaceBetween': 10
+      },
+      '760': {
+        'slidesPerView': 7,
+        'spaceBetween': 10
+      },
+      '900': {
+        'slidesPerView': 8,
+        'spaceBetween': 10
+      },
+      '1100': {
+        'slidesPerView': 10,
+        'spaceBetween': 10
+      },
+      '1221': {
+        'slidesPerView': 10,
+        'spaceBetween': 15
+      }
+    }">
+    <swiper-slide *ngFor="let slide of slides" class="slide-div">
+      <div class="image-container" [style.backgroundImage]="slide.image ? 'url(' + slide.image + ')' : 'none'">
+      </div>
+    </swiper-slide>
+  </swiper-container>
+  </ion-list>
+
+  <!-- Mention & post box  -->
+   
+  <ion-list class="mention-post-main-div">
+    <ion-segment value="post" mode="ios">
+      <ion-segment-button value="post">
+        <ion-label>
+          <ion-icon name="add-circle-outline"></ion-icon>
+          Post
+        </ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="mention">
+        <ion-label>
+          <ion-icon name="at-outline"></ion-icon>
+          Mention
+        </ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-list>
+
+
+  <!-- user-uplord-feed-section -->
+
+  <ion-list class="user-feed">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" sizeMd="12" sizeLg="6" sizeXl="6">
+          <div class="col-1-container">
+            <div class="feed-header-div">
+              <div class="post">
+                <div class="user-info">
+                  <img src="/assets/images/avatar2.jpg" alt="User Avatar" class="avatar">
+                  <div class="user-details">
+                    <h2 class="username">Username</h2>
+                    <p class="timestamp">Posted 3h ago</p>
+                  </div>
+                </div>
+                <p class="content">Discover adventure in patagonia's peaks or serenity provence's -hamlets - arrival</p>
+              </div>
+            </div>
+
+            <!-- img--container -->
+            <ion-list class="feed-img-section">
+              <div class="image-container">
+                <!-- <img src="assets/images/player-holding-img.jpg" class="image img1" alt="Image 1"> -->
+
+                <ion-img class="image image-1" src="/assets/images/player-holding-img.jpg"></ion-img>
+                <ion-img class="image image-2" src="/assets/images/1673870935203.jpg"></ion-img>
+                <ion-img class="image image-3" src="/assets/images/football-img_1.jpg"></ion-img>
+
+
+
+              </div>
+            </ion-list>
+          </div>
+        </ion-col>
+        <!-- column-2 -->
+        <ion-col size="12" sizeMd="12" sizeLg="6" sizeXl="6">
+          <div class="col-1-container">
+            <div class="feed-header-div">
+              <div class="post">
+                <div class="user-info">
+                  <img src="/assets/images/img_avatar1.jpg" alt="User Avatar" class="avatar">
+                  <div class="user-details">
+                    <h2 class="username">Username</h2>
+                    <p class="timestamp">Posted 3h ago</p>
+                  </div>
+                </div>
+                <p class="content">Discover adventure in patagonia's peaks or serenity provence's -hamlets - arrival</p>
+              </div>
+            </div>
+            <!-- img--container -->
+            <ion-list class="feed-img-section">
+              <div class="image-container">
+                <img src="/assets/images/tom.jpg" class="image img1" alt="Image 1">
+              </div>
+            </ion-list>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+  
 
 
 
